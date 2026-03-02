@@ -1516,3 +1516,7 @@ footer {
 
 /* ── Nature/Tech page-hero gradient tweak ────────────────────── */
 [data-theme="tech"] .page-hero-sub { color: var(--text-muted); }
+
+/* Icons */
+.fa-linkedin { color: #0A66C2; }
+.fa-telegram { color: #26A5E4; }
