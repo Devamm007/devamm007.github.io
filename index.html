@@ -1,6 +1,6 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
-  <!-- Personal website — Devam Shah | Academics · Projects · Interests · Certifications · Contact -->
+  <!-- Personal website — Devam Shah | Academics  Projects  Certifications  Experience  Contact -->
   <head>
     <meta charset="UTF-8" />
     <title>Devam Shah | Portfolio</title>
@@ -9,32 +9,32 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Cormorant+Garamond:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet" />
   </head>
   <body>
 
-    <!-- ░░ Animated canvas background ░░ -->
+    <!-- Animated canvas background -->
     <canvas id="bg-canvas"></canvas>
 
-    <!-- ░░ Navigation ░░ -->
+    <!-- Navigation -->
     <header id="navbar">
       <div class="nav-inner">
-        <a href="#hero" class="nav-logo">DS<span class="accent">.</span></a>
+        <a href="index.html" class="nav-logo">DS<span class="accent">.</span></a>
         <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme" title="Switch theme">
-          <span class="toggle-icon">🌿</span>
+          <span class="toggle-icon"></span>
         </button>
         <button class="hamburger" id="hamburger" aria-label="Toggle menu">
           <span></span><span></span><span></span>
         </button>
         <nav>
           <ul id="nav-links">
-            <li><a href="#academics" class="nav-link">Academics</a></li>
-            <li><a href="#projects"  class="nav-link">Projects</a></li>
-            <li><a href="#interests" class="nav-link">Interests</a></li>
-            <li><a href="#certs"      class="nav-link">Certifications</a></li>
-            <li><a href="#experience" class="nav-link">Experience</a></li>
-            <li><a href="#leisure"    class="nav-link">Leisure</a></li>
-            <li><a href="#contact"    class="nav-link">Contact</a></li>
+            <li><a href="#academics"     class="nav-link">Academics</a></li>
+            <li><a href="#projects"      class="nav-link">Projects</a></li>
+            <li><a href="#certs"         class="nav-link">Certifications</a></li>
+            <li><a href="#experience"    class="nav-link">Experience</a></li>
+            <li><a href="#contact"       class="nav-link">Contact</a></li>
+            <li><a href="interests.html" class="nav-link">Interests</a></li>
+            <li><a href="leisure.html"   class="nav-link">Leisure</a></li>
           </ul>
         </nav>
       </div>
@@ -42,7 +42,7 @@
 
     <main>
 
-      <!-- ░░ Hero ░░ -->
+      <!-- Hero -->
       <section id="hero">
         <div class="hero-content">
           <p class="hero-greeting">Hello, I'm</p>
@@ -53,6 +53,8 @@
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">View Projects</a>
             <a href="#contact"  class="btn btn-outline">Get in Touch</a>
+            <a href="https://drive.google.com/uc?export=download&id=1rxYrslbkg3EbkkNPWHwtF5So_QKnrpB7"
+               class="btn btn-outline" download title="Download Resume (PDF)">&#8595; Resume</a>
           </div>
           <div class="hero-scroll-hint">
             <span>Scroll down</span>
@@ -61,23 +63,23 @@
         </div>
       </section>
 
-      <!-- ░░ Academics ░░ -->
+      <!-- Academics -->
       <section id="academics" class="section">
         <div class="container">
           <h2 class="section-title">Academics <span class="accent">.</span></h2>
 
-          <!-- Current degree -->
           <div class="edu-card glass-card">
             <div class="edu-header">
-              <div class="edu-icon">🎓</div>
+              <div class="edu-icon"></div>
               <div>
                 <h3>BS in Data Science &amp; Applications</h3>
-                <p class="edu-institute">Indian Institute of Technology Madras (IITM) &nbsp;·&nbsp; May 2024 – Present</p>
+                <p class="edu-institute">Indian Institute of Technology Madras (IITM) &nbsp;&#xb7;&nbsp; May 2024 – Present</p>
               </div>
             </div>
             <div class="edu-body">
+
               <div class="edu-stage completed">
-                <h4>✅ Foundation Level <span class="badge badge-green">Completed</span></h4>
+                <h4>&#x2705; Foundation Level <span class="badge badge-green">Completed</span></h4>
                 <div class="tag-list">
                   <span class="tag">Maths 1 &amp; 2</span>
                   <span class="tag">Statistics 1 &amp; 2</span>
@@ -88,7 +90,7 @@
               </div>
 
               <div class="edu-stage current">
-                <h4>🔄 Diploma Level <span class="badge badge-green">Almost completed</span></h4>
+                <h4>&#x1f504; Diploma Level <span class="badge badge-green">Almost completed</span></h4>
                 <p class="edu-sub">Diploma in Data Science &amp; Diploma in Programming</p>
                 <div class="tag-list">
                   <span class="tag">ML Foundations</span>
@@ -105,19 +107,20 @@
               </div>
 
               <div class="edu-stage current">
-                <h4>📌 Jan 2026 Term (Trimester System) — Final Diploma Courses</h4>
+                <h4>&#x1f4cc; Jan 2026 Term (Trimester System) — Final Diploma Courses</h4>
                 <div class="tag-list">
                   <span class="tag">Programming, Data Structures and Algorithms using Python</span>
                   <span class="tag">ML Project</span>
                   <span class="tag">Deep Learning Project</span>
                 </div>
               </div>
+
             </div>
           </div>
         </div>
       </section>
 
-      <!-- ░░ Projects ░░ -->
+      <!-- Projects -->
       <section id="projects" class="section">
         <div class="container">
           <h2 class="section-title">Projects <span class="accent">.</span></h2>
@@ -125,10 +128,10 @@
 
             <div class="project-card glass-card">
               <div class="project-top">
-                <span class="project-icon">⚛️</span>
+                <span class="project-icon">&#x269b;&#xfe0f;</span>
                 <div class="project-links">
-                  <a href="https://bb84-simulation-app.vercel.app/" target="_blank" rel="noopener" title="Live Demo">↗ Live</a>
-                  <a href="https://github.com/Devamm007/BB84-Protocol" target="_blank" rel="noopener" title="GitHub">⌥ Repo</a>
+                  <a href="https://bb84-simulation-app.vercel.app/" target="_blank" rel="noopener">&#x2197; Live</a>
+                  <a href="https://github.com/Devamm007/BB84-Protocol" target="_blank" rel="noopener">&#x2325; Repo</a>
                 </div>
               </div>
               <h3>BB84 Protocol Simulation</h3>
@@ -142,10 +145,10 @@
 
             <div class="project-card glass-card">
               <div class="project-top">
-                <span class="project-icon">🗺️</span>
+                <span class="project-icon">&#x1f5fa;&#xfe0f;</span>
                 <div class="project-links">
-                  <a href="https://campusguide-omega.vercel.app" target="_blank" rel="noopener">↗ Live</a>
-                  <a href="https://github.com/Devamm007/IITM-Paradox25-Campus-Guide" target="_blank" rel="noopener">⌥ Repo</a>
+                  <a href="https://campusguide-omega.vercel.app" target="_blank" rel="noopener">&#x2197; Live</a>
+                  <a href="https://github.com/Devamm007/IITM-Paradox25-Campus-Guide" target="_blank" rel="noopener">&#x2325; Repo</a>
                 </div>
               </div>
               <h3>Paradox '25 Campus Guide</h3>
@@ -159,9 +162,9 @@
 
             <div class="project-card glass-card">
               <div class="project-top">
-                <span class="project-icon">🐍</span>
+                <span class="project-icon">&#x1f40d;</span>
                 <div class="project-links">
-                  <a href="https://devamm007.github.io/python-mania" target="_blank" rel="noopener">↗ Live</a>
+                  <a href="https://devamm007.github.io/python-mania" target="_blank" rel="noopener">&#x2197; Live</a>
                 </div>
               </div>
               <h3>Python Mania</h3>
@@ -175,13 +178,13 @@
 
             <div class="project-card glass-card">
               <div class="project-top">
-                <span class="project-icon">⚙️</span>
+                <span class="project-icon">&#x2699;&#xfe0f;</span>
                 <div class="project-links">
-                  <a href="https://github.com/Devamm007/TDS-P1-2025-09-24F2000828" target="_blank" rel="noopener">⌥ Repo</a>
+                  <a href="https://github.com/Devamm007/TDS-P1-2025-09-24F2000828" target="_blank" rel="noopener">&#x2325; Repo</a>
                 </div>
               </div>
               <h3>TDS Automation Endpoint</h3>
-              <p>An HF Space endpoint that autonomously generates full deployable projects (Data URI Generator, LLMPages, ShareVolume) from end-to-end task descriptions.</p>
+              <p>An HF Space endpoint that autonomously generates full deployable projects from end-to-end task descriptions.</p>
               <div class="tag-list">
                 <span class="tag">Python</span>
                 <span class="tag">Automation</span>
@@ -192,10 +195,10 @@
 
             <div class="project-card glass-card">
               <div class="project-top">
-                <span class="project-icon">📝</span>
+                <span class="project-icon">&#x1f4dd;</span>
                 <div class="project-links">
-                  <a href="https://github.com/Devamm007/vehicle-parking-mad-2-24f2000828" target="_blank" rel="noopener">⌥ Vehicle Parking System</a>
-                  <a href="https://github.com/Devamm007/quiz-master-24f2000828" target="_blank" rel="noopener">⌥ Quiz Master</a>
+                  <a href="https://github.com/Devamm007/vehicle-parking-mad-2-24f2000828" target="_blank" rel="noopener">&#x2325; Vehicle Parking</a>
+                  <a href="https://github.com/Devamm007/quiz-master-24f2000828" target="_blank" rel="noopener">&#x2325; Quiz Master</a>
                 </div>
               </div>
               <h3>MAD Application Projects</h3>
@@ -210,60 +213,25 @@
 
           </div>
 
-          <!-- More on GitHub -->
           <div class="github-cta glass-card">
             <p>More projects and experiments on GitHub</p>
             <a href="https://github.com/Devamm007" target="_blank" rel="noopener" class="btn btn-primary">
-              View GitHub Profile ↗
+              View GitHub Profile &#x2197;
             </a>
           </div>
         </div>
       </section>
 
-      <!-- ░░ Interests ░░ -->
-      <section id="interests" class="section">
-        <div class="container">
-          <h2 class="section-title">Interests <span class="accent">.</span></h2>
-          <div class="interests-grid">
-
-            <div class="interest-card glass-card">
-              <div class="interest-icon">📈</div>
-              <h3>Finance &amp; Securities Markets</h3>
-              <p>Passionate about financial instruments, market dynamics, decentralised finance, and quantitative analysis.</p>
-            </div>
-
-            <div class="interest-card glass-card">
-              <div class="interest-icon">🔐</div>
-              <h3>Cybersecurity</h3>
-              <p>Fascinated by ethical hacking, cryptographic protocols, network security, and building secure systems.</p>
-            </div>
-
-            <div class="interest-card glass-card">
-              <div class="interest-icon">⚛️</div>
-              <h3>Quantum Computing</h3>
-              <p>Exploring quantum algorithms, qubits, and quantum cryptography — including hands-on work with Qiskit.</p>
-            </div>
-
-            <div class="interest-card glass-card">
-              <div class="interest-icon">🧠</div>
-              <h3>Artificial Intelligence</h3>
-              <p>Interested in AI's transformative applications across Biotechnology, Research automation, Finance, and Robotics.</p>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ░░ Certifications ░░ -->
+      <!-- Certifications -->
       <section id="certs" class="section">
         <div class="container">
           <h2 class="section-title">Certifications <span class="accent">.</span></h2>
           <div class="certs-grid">
 
             <div class="cert-card glass-card ongoing-cert">
-              <div class="cert-status">🔄 In Progress</div>
+              <div class="cert-status">&#x1f504; In Progress</div>
               <h3>International Business</h3>
-              <p class="cert-provider">NPTEL &nbsp;·&nbsp; 12 Weeks</p>
+              <p class="cert-provider">NPTEL &nbsp;&#xb7;&nbsp; 12 Weeks</p>
               <div class="tag-list">
                 <span class="tag">Global Markets</span>
                 <span class="tag">Trade</span>
@@ -271,9 +239,9 @@
             </div>
 
             <div class="cert-card glass-card ongoing-cert">
-              <div class="cert-status">🔄 In Progress</div>
+              <div class="cert-status">&#x1f504; In Progress</div>
               <h3>Advanced Financial Instruments for Sustainable Business &amp; Decentralised Markets</h3>
-              <p class="cert-provider">NPTEL &nbsp;·&nbsp; 12 Weeks</p>
+              <p class="cert-provider">NPTEL &nbsp;&#xb7;&nbsp; 12 Weeks</p>
               <div class="tag-list">
                 <span class="tag">DeFi</span>
                 <span class="tag">Financial Instruments</span>
@@ -282,9 +250,9 @@
             </div>
 
             <div class="cert-card glass-card ongoing-cert">
-              <div class="cert-status">🔄 In Progress</div>
+              <div class="cert-status">&#x1f504; In Progress</div>
               <h3>Blockchain and Its Applications</h3>
-              <p class="cert-provider">NPTEL &nbsp;·&nbsp; 12 Weeks</p>
+              <p class="cert-provider">NPTEL &nbsp;&#xb7;&nbsp; 12 Weeks</p>
               <div class="tag-list">
                 <span class="tag">Blockchain</span>
                 <span class="tag">Smart Contracts</span>
@@ -293,87 +261,71 @@
             </div>
 
             <div class="cert-card glass-card completed-cert">
-              <div class="cert-status">✅ Completed</div>
+              <div class="cert-status">&#x2705; Completed</div>
               <h3>Ethical Hacking</h3>
-              <p class="cert-provider">NPTEL &nbsp;·&nbsp; 12 Weeks &nbsp;·&nbsp; Issued Nov 2025</p>
+              <p class="cert-provider">NPTEL &nbsp;&#xb7;&nbsp; 12 Weeks &nbsp;&#xb7;&nbsp; Issued Nov 2025</p>
               <div class="tag-list">
                 <span class="tag">Network Security</span>
                 <span class="tag">Penetration Testing</span>
                 <span class="tag">Cryptography</span>
               </div>
               <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs142/Course/NPTEL25CS142S105820136210292133.pdf"
-                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate ↗</a>
+                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate &#x2197;</a>
             </div>
 
             <div class="cert-card glass-card completed-cert">
-              <div class="cert-status">✅ Completed</div>
-              <h3>Introduction to Quantum Computing:<br/>Quantum Algorithms &amp; Qiskit</h3>
-              <p class="cert-provider">NPTEL &nbsp;·&nbsp; 4 Weeks &nbsp;·&nbsp; Issued Sep 2025</p>
+              <div class="cert-status">&#x2705; Completed</div>
+              <h3>Introduction to Quantum Computing: Quantum Algorithms &amp; Qiskit</h3>
+              <p class="cert-provider">NPTEL &nbsp;&#xb7;&nbsp; 4 Weeks &nbsp;&#xb7;&nbsp; Issued Sep 2025</p>
               <div class="tag-list">
                 <span class="tag">Quantum Algorithms</span>
                 <span class="tag">Qiskit</span>
                 <span class="tag">IBM</span>
               </div>
               <a href="https://archive.nptel.ac.in/content/noc/NOC25/SEM2/Ecertificates/106/noc25-cs95/Course/NPTEL25CS95S43700327009212679.pdf"
-                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate ↗</a>
+                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate &#x2197;</a>
             </div>
 
             <div class="cert-card glass-card completed-cert">
-              <div class="cert-status">✅ Completed</div>
+              <div class="cert-status">&#x2705; Completed</div>
               <h3>Scientific Computing with Python</h3>
-              <p class="cert-provider">freeCodeCamp &nbsp;·&nbsp; ~300 hours &nbsp;·&nbsp; Issued Dec 2024</p>
+              <p class="cert-provider">freeCodeCamp &nbsp;&#xb7;&nbsp; ~300 hours &nbsp;&#xb7;&nbsp; Issued Dec 2024</p>
               <div class="tag-list">
                 <span class="tag">Python</span>
                 <span class="tag">Scientific Computing</span>
                 <span class="tag">Algorithms</span>
               </div>
               <a href="https://freecodecamp.org/certification/devam_shah/scientific-computing-with-python-v7"
-                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate ↗</a>
+                 target="_blank" rel="noopener" class="cert-credential-link">View Certificate &#x2197;</a>
             </div>
 
           </div>
         </div>
       </section>
 
-      <!-- ░░ Experience ░░ -->
+      <!-- Experience -->
       <section id="experience" class="section">
         <div class="container">
           <h2 class="section-title">Experience <span class="accent">.</span></h2>
 
-          <!-- Organisation block -->
           <div class="exp-org glass-card">
             <div class="exp-org-header">
-              <div class="exp-org-icon">🏛️</div>
+              <div class="exp-org-icon">&#x1f3db;&#xfe0f;</div>
               <div>
                 <h3 class="exp-org-name">IIT Madras — BS in Data Science Programme</h3>
-                <p class="exp-org-meta">
-                  Internship &nbsp;·&nbsp; 1 yr total
-                  &nbsp;·&nbsp; Chennai, Tamil Nadu, India &nbsp;·&nbsp; On-site
-                </p>
-                <a
-                  href="https://www.linkedin.com/in/devam-shah-030783298/"
-                  target="_blank" rel="noopener"
-                  class="exp-linkedin-link"
-                >View on LinkedIn ↗</a>
+                <p class="exp-org-meta">Internship &nbsp;&#xb7;&nbsp; 1 yr total &nbsp;&#xb7;&nbsp; Chennai, Tamil Nadu, India &nbsp;&#xb7;&nbsp; On-site</p>
+                <a href="https://www.linkedin.com/in/devam-shah-030783298/" target="_blank" rel="noopener" class="exp-linkedin-link">View on LinkedIn &#x2197;</a>
               </div>
             </div>
 
-            <!-- Role 1 -->
             <div class="exp-role">
               <div class="exp-role-dot"></div>
               <div class="exp-role-body">
                 <div class="exp-role-top">
-                  <h4>Teaching Assistant — Application Development I
-                    <span class="exp-course-code">(BSCS2003)</span>
-                  </h4>
-                  <span class="exp-duration badge badge-blue">Jun 2025 – Sep 2025 · 4 mos</span>
+                  <h4>Teaching Assistant — Application Development I <span class="exp-course-code">(BSCS2003)</span></h4>
+                  <span class="exp-duration badge badge-blue">Jun 2025 – Sep 2025  4 mos</span>
                 </div>
-                <p class="exp-desc">
-                  Managed, reviewed, and created course content for
-                  <strong>Modern Application Development I</strong> — covering MVC architecture,
-                  REST APIs, backend (Python/Flask), and frontend (HTML, CSS, JavaScript).
-                  Taught and mentored students online, and handled course operations.
-                </p>
+                <p class="exp-desc">Managed, reviewed, and created course content for Modern Application Development I — covering MVC architecture, REST APIs, backend (Python/Flask), and frontend (HTML, CSS, JavaScript). Taught and mentored students online, and handled course operations.</p>
                 <div class="tag-list">
                   <span class="tag">Python</span>
                   <span class="tag">Flask</span>
@@ -385,21 +337,14 @@
               </div>
             </div>
 
-            <!-- Role 2 -->
             <div class="exp-role">
               <div class="exp-role-dot"></div>
               <div class="exp-role-body">
                 <div class="exp-role-top">
-                  <h4>Teaching Assistant — Mathematics I
-                    <span class="exp-course-code">(BSMA1001)</span>
-                  </h4>
-                  <span class="exp-duration badge badge-blue">Oct 2024 – May 2025 · 8 mos</span>
+                  <h4>Teaching Assistant — Mathematics I <span class="exp-course-code">(BSMA1001)</span></h4>
+                  <span class="exp-duration badge badge-blue">Oct 2024 – May 2025  8 mos</span>
                 </div>
-                <p class="exp-desc">
-                  Managed, reviewed, and created course content for
-                  <strong>Mathematics I</strong> — covering Calculus and Graph Theory.
-                  Taught and mentored students online, and handled course operations.
-                </p>
+                <p class="exp-desc">Managed, reviewed, and created course content for Mathematics I — covering Calculus and Graph Theory. Taught and mentored students online, and handled course operations.</p>
                 <div class="tag-list">
                   <span class="tag">Calculus</span>
                   <span class="tag">Graph Theory</span>
@@ -414,106 +359,135 @@
         </div>
       </section>
 
-      <!-- ░░ Leisure ░░ -->
-      <section id="leisure" class="section">
-        <div class="container">
-          <h2 class="section-title">Beyond the Screen <span class="accent">.</span></h2>
-          <p class="leisure-intro">When I'm not at a terminal, you'll find me outdoors — chasing horizons, spinning pedals, and finding clarity in wild places. Nature keeps me grounded and creative.</p>
-          <div class="leisure-grid">
-
-            <div class="leisure-card glass-card">
-              <div class="leisure-banner leisure-cycling">
-                <div class="leisure-banner-overlay"></div>
-                <span class="leisure-banner-emoji">🚴</span>
-              </div>
-              <div class="leisure-body">
-                <h3>Cycling</h3>
-                <p>Long rides through open roads. Cycling is my moving meditation — fresh air, steady rhythm, and the quiet hum of wheels on tarmac. It clears the mind like nothing else.</p>
-              </div>
-            </div>
-
-            <div class="leisure-card glass-card">
-              <div class="leisure-banner leisure-travel">
-                <div class="leisure-banner-overlay"></div>
-                <span class="leisure-banner-emoji">🌿</span>
-              </div>
-              <div class="leisure-body">
-                <h3>Travelling in Nature</h3>
-                <p>Mountains, rivers, dense forests — I seek places where nature takes over completely. Every new landscape resets perspective and reminds me of the bigger picture beyond screens and deadlines.</p>
-              </div>
-            </div>
-
-            <div class="leisure-card glass-card">
-              <div class="leisure-banner leisure-adventure">
-                <div class="leisure-banner-overlay"></div>
-                <span class="leisure-banner-emoji">🧗</span>
-              </div>
-              <div class="leisure-body">
-                <h3>Adventures</h3>
-                <p>Trekking offbeat trails and embracing the unknown. The careful planning, physical challenge, and raw reward of an adventure sharpen focus and fuel creativity back at the desk.</p>
-              </div>
-            </div>
-
-          </div>
-        </div>
-      </section>
-
-      <!-- ░░ Contact ░░ -->
+      <!-- Contact -->
       <section id="contact" class="section">
         <div class="container">
           <h2 class="section-title">Get in Touch <span class="accent">.</span></h2>
           <p class="contact-intro">Feel free to reach out — whether it's for collaboration, questions, or just to connect.</p>
-          <div class="contact-grid">
 
+          <div class="contact-grid">
             <a href="mailto:shahdevam49@gmail.com" class="contact-card glass-card">
-              <span class="contact-icon">✉️</span>
+              <span class="contact-icon">&#x2709;&#xfe0f;</span>
               <div>
                 <p class="contact-label">Personal Email</p>
                 <p class="contact-value">shahdevam49@gmail.com</p>
               </div>
             </a>
-
             <a href="mailto:24f2000828@ds.study.iitm.ac.in" class="contact-card glass-card">
-              <span class="contact-icon">🎓</span>
+              <span class="contact-icon">&#x1f393;</span>
               <div>
                 <p class="contact-label">Student Email</p>
                 <p class="contact-value">24f2000828@ds.study.iitm.ac.in</p>
               </div>
             </a>
-
             <a href="https://www.linkedin.com/in/devam-shah-030783298/" target="_blank" rel="noopener" class="contact-card glass-card">
-              <span class="contact-icon">💼</span>
+              <span class="contact-icon">&#x1f4bc;</span>
               <div>
                 <p class="contact-label">LinkedIn</p>
                 <p class="contact-value">Devam Shah</p>
               </div>
             </a>
-
             <a href="https://github.com/Devamm007" target="_blank" rel="noopener" class="contact-card glass-card">
-              <span class="contact-icon">🐙</span>
+              <span class="contact-icon">&#x1f419;</span>
               <div>
                 <p class="contact-label">GitHub</p>
                 <p class="contact-value">@Devamm007</p>
               </div>
             </a>
-
             <a href="https://t.me/Devam_077" target="_blank" rel="noopener" class="contact-card glass-card">
-              <span class="contact-icon">💬</span>
+              <span class="contact-icon">&#x1f4ac;</span>
               <div>
                 <p class="contact-label">Telegram</p>
                 <p class="contact-value">@Devam_077</p>
               </div>
             </a>
-
           </div>
+
+          <!-- Let's Connect — schedule a Google Meet -->
+          <div class="calendar-cta glass-card">
+            <div class="calendar-cta-inner">
+              <div class="calendar-cta-body">
+                <div class="calendar-icon-wrap">
+                  <span class="calendar-icon">&#x1f4c5;</span>
+                  <span class="calendar-pulse"></span>
+                </div>
+                <div class="calendar-cta-text">
+                  <div class="calendar-cta-header">
+                    <h3>Let's Connect</h3>
+                    <span class="calendar-available-badge">&#x25cf;&nbsp; Available</span>
+                  </div>
+                  <p>Grab a time that works for you and we'll hop on a quick Google Meet — whether it's about a project, an interview, an opportunity, mentorship, or just a friendly conversation.</p>
+                  <p class="calendar-meta">&#x23f0;&nbsp; 25-30 min &nbsp;&#xb7;&nbsp; &#x1f30d;&nbsp; IST (UTC +5:30) &nbsp;&#xb7;&nbsp; Google Meet</p>
+                </div>
+              </div>
+              <a href="https://calendar.app.google/XNX1adU5ZSFyXUbj7"
+                 target="_blank" rel="noopener"
+                 class="btn btn-primary calendar-btn"
+                 title="Schedule a Google Meet with Devam">
+                Schedule a Meet &#x2197;
+              </a>
+            </div>
+          </div>
+
+          <!-- Send a Message -->
+          <div class="contact-form-wrapper glass-card">
+            <h3 class="form-heading">Send a Message</h3>
+            <p class="form-subtext">I'll reply to your email as soon as possible.</p>
+            <form
+              action="https://formsubmit.co/shahdevam49@gmail.com"
+              method="POST"
+              class="contact-form"
+              id="contact-form"
+            >
+              <input type="hidden" name="_captcha"  value="false" />
+              <input type="hidden" name="_template" value="table" />
+              <input type="hidden" name="_next"     value="https://devamm007.github.io?sent=1" />
+              <input type="hidden" name="_subject" id="hidden-subject" value="Portfolio Contact — New message" />
+
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="f-name">Name</label>
+                  <input type="text"  name="name"  id="f-name"  placeholder="Your name"      required autocomplete="name" />
+                </div>
+                <div class="form-group">
+                  <label for="f-email">Email</label>
+                  <input type="email" name="email" id="f-email" placeholder="your@email.com" required autocomplete="email" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <label for="f-purpose">Purpose of Contact</label>
+                <select id="f-purpose" required>
+                  <option value="" disabled selected>Select a topic…</option>
+                  <option value="Portfolio Contact — Discussion">Tech Discussion</option>
+                  <option value="Portfolio Contact — Interview / Opportunity">Interview / Opportunity</option>
+                  <option value="Portfolio Contact — Business / Collaboration">Collaboration / Business</option>
+                  <option value="Portfolio Contact — General Chat">General Chat</option>
+                  <option value="other">Other (Please specify)</option>
+                </select>
+              </div>
+
+              <div class="form-group" id="custom-purpose-group" style="display: none;">
+                <label for="f-custom-purpose">Specify Purpose</label>
+                <input type="text" id="f-custom-purpose" placeholder="What would you like to discuss?" />
+              </div>
+
+              <div class="form-group">
+                <label for="f-msg">Message</label>
+                <textarea name="message" id="f-msg" rows="4" placeholder="Hi Devam, I wanted to connect about…" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary form-submit">Send Message &#x2192;</button>
+            </form>
+          </div>
+
         </div>
       </section>
 
     </main>
 
-    <!-- ░░ Footer ░░ -->
+    <!-- Footer -->
     <footer>
-      <p>© 2026 Devam Shah &nbsp;·&nbsp; Built with ❤️ and vanilla web tech</p>
+      <p>&#xa9; 2026 Devam Shah &nbsp;&#xb7;&nbsp; Built with &#x2764;&#xfe0f; and vanilla web tech</p>
     </footer>
 
     <script src="script.js"></script>
