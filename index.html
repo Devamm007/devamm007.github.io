@@ -53,8 +53,7 @@
           <div class="hero-cta">
             <a href="#projects" class="btn btn-primary">View Projects</a>
             <a href="#contact"  class="btn btn-outline">Get in Touch</a>
-            <a href="https://drive.google.com/uc?export=download&id=1rxYrslbkg3EbkkNPWHwtF5So_QKnrpB7"
-               class="btn btn-outline" download title="Download Resume (PDF)">&#8595; Resume</a>
+            <button class="btn btn-outline" id="resume-btn" title="Download Resume (PDF)">&#8595; Resume</button>
           </div>
           <div class="hero-scroll-hint">
             <span>Scroll down</span>
@@ -490,6 +489,54 @@
     <footer>
       <p>&#xa9; 2026 Devam Shah &nbsp;&#xb7;&nbsp; Built with &#x2764;&#xfe0f; and vanilla web tech</p>
     </footer>
+
+    <!-- Resume Gate Modal -->
+    <div class="resume-modal-overlay" id="resume-overlay">
+      <div class="resume-modal glass-card">
+        <button class="resume-modal-close" id="resume-close" aria-label="Close">&times;</button>
+        <div class="resume-modal-icon">&#x1f4c4;</div>
+        <h3 class="resume-modal-title">Request Resume</h3>
+        <p class="resume-modal-desc">Enter your real email — the resume link will be sent to your inbox. No fake emails, no resume.</p>
+        <form class="resume-gate-form" id="resume-gate-form"
+              action="https://formsubmit.co/shahdevam49@gmail.com"
+              method="POST">
+          <!-- FormSubmit config -->
+          <input type="hidden" name="_captcha"    value="false" />
+          <input type="hidden" name="_template"   value="table" />
+          <input type="hidden" name="_subject"    id="rg-hidden-subject" value="Resume Request" />
+          <input type="hidden" name="_autoresponse"
+                 value="Hi! Here's the resume you requested: https://drive.google.com/file/d/1rxYrslbkg3EbkkNPWHwtF5So_QKnrpB7/view?usp=sharing — Devam Shah" />
+          <input type="hidden" name="_next"
+                 value="https://devamm007.github.io?resume=sent" />
+
+          <div class="form-group">
+            <label for="rg-name">Name</label>
+            <input type="text" id="rg-name" name="name" placeholder="Your name" required autocomplete="name" />
+          </div>
+          <div class="form-group">
+            <label for="rg-email">Email</label>
+            <input type="email" id="rg-email" name="email" placeholder="your@email.com" required autocomplete="email" />
+          </div>
+          <div class="form-group">
+            <label for="rg-reason">Purpose</label>
+            <select id="rg-reason" name="purpose" required>
+              <option value="" disabled selected>Why do you need it?</option>
+              <option value="Hiring / Recruitment">Hiring / Recruitment</option>
+              <option value="Collaboration">Collaboration</option>
+              <option value="Academic Reference">Academic Reference</option>
+              <option value="General Interest">General Interest</option>
+            </select>
+          </div>
+          <button type="submit" class="btn btn-primary resume-submit-btn">Send Resume to My Email &#x2709;&#xfe0f;</button>
+          <p class="resume-form-note">&#x1f512; The link will be emailed to you — it won't appear here.</p>
+        </form>
+        <div class="resume-success" id="resume-success" style="display:none;">
+          <div class="resume-success-icon">&#x2709;&#xfe0f;</div>
+          <p><strong>Check your inbox!</strong></p>
+          <p class="resume-success-sub">The resume download link has been emailed to you. Check spam if you don't see it within a minute.</p>
+        </div>
+      </div>
+    </div>
 
     <script src="script.js"></script>
   </body>

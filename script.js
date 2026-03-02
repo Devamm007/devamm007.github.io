@@ -830,7 +830,53 @@
 })();
 
 
-/* ── 7. Contact form — purpose dropdown ─────────────────────── */
+/* ── 7. Resume gate modal ───────────────────────────────────── */
+(function initResumeGate() {
+  const btn     = document.getElementById('resume-btn');
+  const overlay = document.getElementById('resume-overlay');
+  const closeBtn= document.getElementById('resume-close');
+  const form    = document.getElementById('resume-gate-form');
+  const success = document.getElementById('resume-success');
+  if (!btn || !overlay) return;
+
+  /* Open modal */
+  btn.addEventListener('click', () => {
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+  });
+
+  /* Close helpers */
+  function closeModal() {
+    overlay.classList.remove('active');
+    document.body.style.overflow = '';
+  }
+  closeBtn.addEventListener('click', closeModal);
+  overlay.addEventListener('click', e => { if (e.target === overlay) closeModal(); });
+  document.addEventListener('keydown', e => {
+    if (e.key === 'Escape' && overlay.classList.contains('active')) closeModal();
+  });
+
+  /* Update hidden subject with requester name on submit */
+  form.addEventListener('submit', function () {
+    const name = document.getElementById('rg-name').value.trim();
+    const subj = document.getElementById('rg-hidden-subject');
+    if (name && subj) subj.value = 'Resume Request — ' + name;
+  });
+
+  /* Show success state after ?resume=sent redirect */
+  if (window.location.search.includes('resume=sent')) {
+    form.style.display = 'none';
+    success.style.display = 'flex';
+    overlay.classList.add('active');
+    document.body.style.overflow = 'hidden';
+
+    /* Clean URL */
+    history.replaceState({}, '', window.location.pathname);
+  }
+})();
+
+
+/* ── 8. Contact form — purpose dropdown ─────────────────────── */
 (function initPurposeSelect() {
   /* Works across all 3 pages regardless of element-id prefix */
   const form          = document.getElementById('contact-form');
