@@ -1222,7 +1222,7 @@ footer {
   font-style: normal;
   color: var(--accent);
 }
-[data-theme="tech"] .section-title .accent::before { content: '§ '; font-size: 0.6em; opacity: 0.5; font-style: normal; }
+/* [data-theme="tech"] .section-title .accent::before { content: '§ '; font-size: 0.6em; opacity: 0.5; font-style: normal; } */
 
 /* ── Hero ────────────────────────────────────────────────────── */
 [data-theme="tech"] .hero-name {
